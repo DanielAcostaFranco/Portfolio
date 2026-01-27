@@ -46,9 +46,9 @@
                 </a>
 
                 <div class="flex items-center space-x-6 ml-0 md:ml-4 border-l-0 md:border-l border-slate-800 pl-0 md:pl-8">
-                    <a href="https://www.linkedin.com/in/daniel-acosta-b42b4a296/" target="_blank" class="social-link text-2xl text-slate-400" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://app.joinhandshake.com/profiles/danielacosta" target="_blank" class="social-link text-2xl text-slate-400" title="Handshake"><i class="fas fa-graduation-cap"></i></a>
-                    <a href="https://github.com/DanielAcostaFranco" target="_blank" class="social-link text-2xl text-slate-400" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-acosta-b42b4a296/" target="_blank" class="social-link text-2xl text-slate-400"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://app.joinhandshake.com/profiles/danielacosta" target="_blank" class="social-link text-2xl text-slate-400"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://github.com/DanielAcostaFranco" target="_blank" class="social-link text-2xl text-slate-400"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -60,80 +60,7 @@
             <div class="h-[1px] bg-slate-800 flex-grow ml-6"></div>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <script>
-                // DATA DE TUS PROYECTOS
-                const projects = [
-                    {
-                        title: "GoalNerd", 
-                        desc: "Soccer statistics platform integrated with real-time data APIs.", 
-                        tags: ["JavaScript", "HTML"],
-                        repo: "https://github.com/DanielAcostaFranco/goalnerd-new-version",
-                        link: "https://goalnerd-soccer.netlify.app/"
-                    },
-                    {
-                        title: "NextUp Web App", 
-                        desc: "Social platform for planning and sharing experiences.", 
-                        tags: ["React", "JavaScript", "JSON"],
-                        repo: "https://github.com/regino-pan-a-i/NextUp",
-                        link: "https://nextup-4b24.onrender.com/"
-                    },
-                    {
-                        title: "Guess My Number", 
-                        desc: "Interactive logic game with dynamic number hints.", 
-                        tags: ["HTML", "JavaScript"],
-                        repo: "https://github.com/DanielAcostaFranco/GuessMyNumber",
-                        link: "https://danielacostafranco.github.io/GuessMyNumber/"
-                    },
-                    {
-                        title: "BYUI Project Chabot", 
-                        desc: "AI assistant providing academic and administrative student support.", 
-                        tags: ["AI", "JavaScript", "Google Apps Script", "API"],
-                        repo: "https://github.com/DanielAcostaFranco/ftcchatbotwidget",
-                        link: "https://drive.google.com/file/d/1IYmmBdztbPERdVn_yGAZ7-O1ze12CKrk/view?usp=sharing"
-                    },
-                    {
-                        title: "ToDo List", 
-                        desc: "Productivity tool for organizing and tracking daily tasks.", 
-                        tags: ["Python", "Algorithms"],
-                        repo: "https://github.com/DanielAcostaFranco/todolist",
-                        link: "https://danielacostafranco.github.io/todolist/"
-                    },
-                    {
-                        title: "Dahoot - Trivia Maker", 
-                        desc: "Gamified trivia platform for interactive real-time learning.", 
-                        tags: ["C#", ".NET"],
-                        repo: "https://github.com/DanielAcostaFranco/cse210/tree/main/final/FinalProject", 
-                        link: "#"
-                    }
-                ];
-
-                // GENERADOR DINÁMICO DE TARJETAS
-                projects.forEach((p, i) => {
-                    document.write(`
-                        <div class="project-card rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="${i * 100}">
-                            <div class="terminal-header">
-                                <div class="dot bg-red-500/30"></div><div class="dot bg-yellow-500/30"></div><div class="dot bg-green-500/30"></div>
-                            </div>
-                            <div class="p-8">
-                                <div class="flex justify-between items-center mb-6">
-                                    <i class="far fa-folder-open text-4xl text-cyan-400/60"></i>
-                                    <div class="space-x-4 text-slate-500 text-xl">
-                                        <a href="${p.repo}" target="_blank" class="hover:text-cyan-400 transition"><i class="fab fa-github"></i></a>
-                                        <a href="${p.link}" target="_blank" class="hover:text-cyan-400 transition"><i class="fas fa-external-link-alt"></i></a>
-                                    </div>
-                                </div>
-                                <h4 class="text-xl font-bold text-slate-100 mb-3">${p.title}</h4>
-                                <p class="text-slate-400 text-sm mb-6 leading-relaxed">${p.desc}</p>
-                                <div class="flex flex-wrap gap-2">
-                                    ${p.tags.map(tag => `<span class="text-[10px] text-cyan-400/80 bg-cyan-400/5 px-2 py-1 rounded border border-cyan-400/20">${tag}</span>`).join('')}
-                                </div>
-                            </div>
-                        </div>
-                    `);
-                });
-            </script>
-        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-container"></div>
     </section>
 
     <section id="contact" class="py-40 px-6 text-center max-w-2xl mx-auto">
