@@ -12,7 +12,7 @@ function fadeToSection(e, targetId) {
     }, 500);
 }
 
-// PROJECT DATA
+/// PROJECT DATA
 const projects = [
   {
     title: "Pomodoro Timer",
@@ -36,6 +36,13 @@ const projects = [
     link: "https://danielacostafranco.github.io/GuessMyNumber/"
   },
   {
+    title: "ToDo List",
+    desc: "Task management app that allows users to create, track, and organize daily tasks using basic algorithms and data structures.",
+    tags: ["Python", "Algorithms"],
+    repo: "https://github.com/DanielAcostaFranco/todolist",
+    link: "https://danielacostafranco.github.io/todolist/"
+  },
+  {
     title: "BYUI Project Chatbot",
     desc: "AI-powered chatbot designed to assist students with academic and administrative questions using automated responses.",
     tags: ["AI", "JavaScript", "Google Apps Script", "API"],
@@ -43,7 +50,7 @@ const projects = [
     link: "https://drive.google.com/file/d/1IYmmBdztbPERdVn_yGAZ7-O1ze12CKrk/view"
   },
   {
-    title: "GoalNerd - Team",
+    title: "GoalNerd",
     desc: "Soccer statistics web platform that displays team and player data using real-time API integrations.",
     tags: ["JavaScript", "HTML"],
     repo: "https://github.com/DanielAcostaFranco/goalnerd-new-version",
@@ -57,14 +64,13 @@ const projects = [
     link: "#"
   },
   {
-    title: "NextUp Web App - Team",
+    title: "NextUp Web App",
     desc: "Social web application that allows users to plan, organize, and share activities with others.",
     tags: ["React", "JavaScript", "JSON"],
     repo: "https://github.com/regino-pan-a-i/NextUp",
     link: "https://nextup-4b24.onrender.com/"
   }
 ];
-
 
 const container = document.getElementById("projects-container");
 
