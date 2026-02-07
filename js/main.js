@@ -50,7 +50,7 @@ const projects = [
     link: "https://drive.google.com/file/d/1IYmmBdztbPERdVn_yGAZ7-O1ze12CKrk/view"
   },
   {
-    title: "GoalNerd",
+    title: "GoalNerd - Team",
     desc: "Soccer statistics web platform that displays team and player data using real-time API integrations.",
     tags: ["JavaScript", "HTML"],
     repo: "https://github.com/DanielAcostaFranco/goalnerd-new-version",
@@ -64,7 +64,7 @@ const projects = [
     link: "#"
   },
   {
-    title: "NextUp Web App",
+    title: "NextUp Web App - Team",
     desc: "Social web application that allows users to plan, organize, and share activities with others.",
     tags: ["React", "JavaScript", "JSON"],
     repo: "https://github.com/regino-pan-a-i/NextUp",
