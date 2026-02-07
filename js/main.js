@@ -14,49 +14,57 @@ function fadeToSection(e, targetId) {
 
 // PROJECT DATA
 const projects = [
-    {
-        title: "GoalNerd",
-        desc: "Soccer statistics platform integrated with real-time data APIs.",
-        tags: ["JavaScript", "HTML"],
-        repo: "https://github.com/DanielAcostaFranco/goalnerd-new-version",
-        link: "https://goalnerd-soccer.netlify.app/"
-    },
-    {
-        title: "NextUp Web App",
-        desc: "Social platform for planning and sharing experiences.",
-        tags: ["React", "JavaScript", "JSON"],
-        repo: "https://github.com/regino-pan-a-i/NextUp",
-        link: "https://nextup-4b24.onrender.com/"
-    },
-    {
-        title: "Guess My Number",
-        desc: "Interactive logic game with dynamic number hints.",
-        tags: ["HTML", "JavaScript"],
-        repo: "https://github.com/DanielAcostaFranco/GuessMyNumber",
-        link: "https://danielacostafranco.github.io/GuessMyNumber/"
-    },
-    {
-        title: "BYUI Project Chabot",
-        desc: "AI assistant providing academic and administrative student support.",
-        tags: ["AI", "JavaScript", "Google Apps Script", "API"],
-        repo: "https://github.com/DanielAcostaFranco/ftcchatbotwidget",
-        link: "https://drive.google.com/file/d/1IYmmBdztbPERdVn_yGAZ7-O1ze12CKrk/view"
-    },
-    {
-        title: "ToDo List",
-        desc: "Productivity tool for organizing and tracking daily tasks.",
-        tags: ["Python", "Algorithms"],
-        repo: "https://github.com/DanielAcostaFranco/todolist",
-        link: "https://danielacostafranco.github.io/todolist/"
-    },
-    {
-        title: "Dahoot - Trivia Maker",
-        desc: "Gamified trivia platform for interactive real-time learning.",
-        tags: ["C#", ".NET"],
-        repo: "https://github.com/DanielAcostaFranco/cse210/tree/main/final/FinalProject",
-        link: "#"
-    }
+  {
+    title: "Pomodoro Timer",
+    desc: "Time management app based on the Pomodoro technique, allowing users to focus in work sessions with short breaks to improve productivity.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    repo: "https://github.com/DanielAcostaFranco/Pomodoro-Timer",
+    link: "https://danielacostafranco.github.io/Pomodoro-Timer/"
+  },
+  {
+    title: "Shopping List",
+    desc: "Simple and intuitive shopping list app to add, remove, and manage items dynamically using JavaScript.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    repo: "https://github.com/DanielAcostaFranco/shopping-list",
+    link: "https://danielacostafranco.github.io/shopping-list/"
+  },
+  {
+    title: "Guess My Number",
+    desc: "Interactive number guessing game that provides dynamic hints and feedback based on user input.",
+    tags: ["HTML", "JavaScript"],
+    repo: "https://github.com/DanielAcostaFranco/GuessMyNumber",
+    link: "https://danielacostafranco.github.io/GuessMyNumber/"
+  },
+  {
+    title: "BYUI Project Chatbot",
+    desc: "AI-powered chatbot designed to assist students with academic and administrative questions using automated responses.",
+    tags: ["AI", "JavaScript", "Google Apps Script", "API"],
+    repo: "https://github.com/DanielAcostaFranco/ftcchatbotwidget",
+    link: "https://drive.google.com/file/d/1IYmmBdztbPERdVn_yGAZ7-O1ze12CKrk/view"
+  },
+  {
+    title: "GoalNerd - Team",
+    desc: "Soccer statistics web platform that displays team and player data using real-time API integrations.",
+    tags: ["JavaScript", "HTML"],
+    repo: "https://github.com/DanielAcostaFranco/goalnerd-new-version",
+    link: "https://goalnerd-soccer.netlify.app/"
+  },
+  {
+    title: "Dahoot - Trivia Maker",
+    desc: "Real-time trivia game inspired by Kahoot, built to create and play quizzes in an interactive way.",
+    tags: ["C#", ".NET"],
+    repo: "https://github.com/DanielAcostaFranco/cse210/tree/main/final/FinalProject",
+    link: "#"
+  },
+  {
+    title: "NextUp Web App - Team",
+    desc: "Social web application that allows users to plan, organize, and share activities with others.",
+    tags: ["React", "JavaScript", "JSON"],
+    repo: "https://github.com/regino-pan-a-i/NextUp",
+    link: "https://nextup-4b24.onrender.com/"
+  }
 ];
+
 
 const container = document.getElementById("projects-container");
 
@@ -138,3 +146,80 @@ function animate() {
 
 init();
 animate();
+
+/* ===========================
+   ✅ CONTACT FORM VALIDATION (INPUT + ERRORS + HTML UPDATE)
+   =========================== */
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+    const nameInput = document.getElementById("nameInput");
+    const emailInput = document.getElementById("emailInput");
+    const messageInput = document.getElementById("messageInput");
+
+    const nameError = document.getElementById("nameError");
+    const emailError = document.getElementById("emailError");
+    const messageError = document.getElementById("messageError");
+
+    const successBox = document.getElementById("successBox");
+    const previewBox = document.getElementById("previewBox");
+
+    const previewName = document.getElementById("previewName");
+    const previewEmail = document.getElementById("previewEmail");
+    const previewMessage = document.getElementById("previewMessage");
+
+    function showError(el, msg) {
+        el.textContent = msg;
+        el.classList.remove("hidden");
+    }
+
+    function hideError(el) {
+        el.textContent = "";
+        el.classList.add("hidden");
+    }
+
+    function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        hideError(nameError);
+        hideError(emailError);
+        hideError(messageError);
+        successBox.classList.add("hidden");
+        previewBox.classList.add("hidden");
+
+        const name = nameInput.value.trim();
+        const email = emailInput.value.trim();
+        const message = messageInput.value.trim();
+
+        let hasError = false;
+
+        if (name.length < 2) {
+            showError(nameError, "Name must be at least 2 characters.");
+            hasError = true;
+        }
+
+        if (!isValidEmail(email)) {
+            showError(emailError, "Please enter a valid email.");
+            hasError = true;
+        }
+
+        if (message.length < 10) {
+            showError(messageError, "Message must be at least 10 characters.");
+            hasError = true;
+        }
+
+        if (hasError) return;
+
+        previewName.textContent = name;
+        previewEmail.textContent = email;
+        previewMessage.textContent = message;
+
+        previewBox.classList.remove("hidden");
+        successBox.classList.remove("hidden");
+    });
+}

@@ -26,7 +26,7 @@
             <a href="#projects" onclick="fadeToSection(event, '#projects')" class="text-slate-400 hover:text-cyan-400 transition cursor-pointer">// Projects</a>
             <a href="#contact" onclick="fadeToSection(event, '#contact')" class="text-slate-400 hover:text-cyan-400 transition cursor-pointer">// Contact</a>
             <div class="h-4 w-[1px] bg-slate-700"></div>
-            <a href="New Portfolio/Resume Daniel Acosta (Updated).pdf" download class="border border-cyan-400 text-cyan-400 px-4 py-2 rounded text-[10px] hover:bg-cyan-400/10 transition">RESUME</a>
+            <a href="Resume Daniel Acosta (Updated).pdf" download class="border border-cyan-400 text-cyan-400 px-4 py-2 rounded text-[10px] hover:bg-cyan-400/10 transition">RESUME</a>
         </div>
     </nav>
 
@@ -34,8 +34,8 @@
         <div class="w-full">
             <p class="text-cyan-400 mb-4 text-sm" data-aos="fade-right">01. Initialization...</p>
             <h1 class="text-5xl md:text-8xl font-bold text-slate-100 mb-6 leading-tight" data-aos="fade-up">Daniel Acosta.</h1>
-            <h2 class="text-2xl md:text-5xl font-bold text-slate-500 mb-10" data-aos="fade-up" data-aos-delay="100">Software and Web Dev Solutions.</h2>
-            
+            <h2 class="text-2xl md:text-5xl font-bold text-slate-500 mb-10" data-aos="fade-up" data-aos-delay="100">Software and Web Dev Solutions.</h2>x
+
             <div class="flex flex-wrap gap-6 items-center justify-center md:justify-start" data-aos="fade-up" data-aos-delay="300">
                 <a href="#projects" onclick="fadeToSection(event, '#projects')" class="bg-cyan-400 text-slate-950 px-8 py-4 rounded font-bold hover:bg-cyan-300 transition duration-300">
                     &gt; View Projects
@@ -69,7 +69,37 @@
         <p class="text-slate-400 mb-12 text-sm leading-relaxed">
             I am currently open for new engineering challenges and professional opportunities. Feel free to reach out via transmission.
         </p>
-        <a href="mailto:danielacosta@byui.edu" class="border border-cyan-400 text-cyan-400 px-12 py-5 rounded hover:bg-cyan-400/10 transition duration-300 uppercase tracking-widest text-xs font-bold">
+
+        <form id="contactForm" class="mt-10 max-w-xl mx-auto text-left">
+            <div class="grid gap-4">
+                <div>
+                    <label class="block text-slate-400 text-xs uppercase tracking-widest mb-2">Name</label>
+                    <input id="nameInput" type="text" class="w-full px-4 py-3 rounded bg-slate-900/40 border border-slate-700 text-slate-200 focus:outline-none focus:border-cyan-400" placeholder="Your name">
+                    <p id="nameError" class="text-red-400 text-xs mt-2 hidden"></p>
+                </div>
+
+                <div>
+                    <label class="block text-slate-400 text-xs uppercase tracking-widest mb-2">Email</label>
+                    <input id="emailInput" type="text" class="w-full px-4 py-3 rounded bg-slate-900/40 border border-slate-700 text-slate-200 focus:outline-none focus:border-cyan-400" placeholder="you@email.com">
+                    <p id="emailError" class="text-red-400 text-xs mt-2 hidden"></p>
+                </div>
+
+                <div>
+                    <label class="block text-slate-400 text-xs uppercase tracking-widest mb-2">Message</label>
+                    <textarea id="messageInput" rows="4" class="w-full px-4 py-3 rounded bg-slate-900/40 border border-slate-700 text-slate-200 focus:outline-none focus:border-cyan-400" placeholder="Type your message..."></textarea>
+                    <p id="messageError" class="text-red-400 text-xs mt-2 hidden"></p>
+                </div>
+
+                <div id="previewBox" class="hidden mt-2 p-4 rounded border border-slate-700 bg-slate-900/30 text-slate-300 text-sm">
+                    <p class="text-slate-400 text-xs uppercase tracking-widest mb-2">Preview</p>
+                    <p><span class="text-slate-500">From:</span> <span id="previewName"></span> (<span id="previewEmail"></span>)</p>
+                    <p class="mt-2"><span class="text-slate-500">Message:</span></p>
+                    <p id="previewMessage" class="mt-1"></p>
+                </div>
+            </div>
+        </form>
+
+        <a href="mailto:danielacosta@byui.edu" class="inline-block mt-10 border border-cyan-400 text-cyan-400 px-12 py-5 rounded hover:bg-cyan-400/10 transition duration-300 uppercase tracking-widest text-xs font-bold">
             Send Transmission
         </a>
     </section>

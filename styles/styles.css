@@ -4,6 +4,7 @@ body {
     background-color: #020617; 
     color: #e2e8f0; 
     overflow-x: hidden;
+    transition: opacity 0.5s ease;
 }
 
 .fade-out { opacity: 0; }
