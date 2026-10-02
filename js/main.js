@@ -69,6 +69,20 @@ const projects = [
     tags: ["React", "JavaScript", "JSON"],
     repo: "https://github.com/regino-pan-a-i/NextUp",
     link: "https://nextup-4b24.onrender.com/"
+  },
+  {
+    title: "Baby Time Tracker",
+    desc: "A simple tracking app for recording and organizing a baby's daily activities.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    repo: "https://github.com/DanielAcostaFranco/Baby-Time-Tracker",
+    link: "https://danielacostafranco.github.io/Baby-Time-Tracker/"
+  },
+  {
+    title: "Sacrament Meeting",
+    desc: "Web application for organizing and managing sacrament meeting information.",
+    tags: ["JavaScript", "Node.js"],
+    repo: "https://github.com/DanielAcostaFranco/Sacrament-Meeting",
+    link: null
   }
 ];
 
@@ -87,7 +101,7 @@ projects.forEach((p, i) => {
                     <i class="far fa-folder-open text-4xl text-cyan-400/60"></i>
                     <div class="space-x-4 text-slate-500 text-xl">
                         <a href="${p.repo}" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="${p.link}" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        ${p.link ? `<a href="${p.link}" target="_blank"><i class="fas fa-external-link-alt"></i></a>` : ""}
                     </div>
                 </div>
                 <h4 class="text-xl font-bold text-slate-100 mb-3">${p.title}</h4>
