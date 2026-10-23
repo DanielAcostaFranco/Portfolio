@@ -1,0 +1,22 @@
+{
+  "assets": [
+    {
+      "material": "paper",
+      "file": "/cups/paper.png",
+      "generatedWith": "built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: blank photographic template for dynamic cup branding. Primary request: one tall 16 oz blank WHITE paper takeaway coffee cup, black sip lid firmly attached. Subtle matte paper fiber texture, tapered straight sides, slightly rolled base. Entire blank front print area unobstructed. Scene/backdrop: absolutely pure white seamless studio background and white ground, soft gray realistic contact shadow at cup base cast slightly right. Subject centered horizontally and upright, cup fills 65% of image height and about 42% width. Camera: front elevation at mid cup height with very slight downward perspective to see a modest ellipse on the top, 85mm product lens, NO tilt, perfectly symmetric central axis, low perspective distortion. Style: exceptionally photorealistic premium e-commerce product photography, crisp material details, broad softbox left, fill right, natural soft shadows. Composition: square 1024x1024 image, ONE cup only, full cup visible with generous white margin all around. Text: NONE. Constraints: NO logo, NO text, NO graphics, NO carton, NO other products, no hands, no decorations, no watermark. Cup surface must be completely blank and suitable for later separate logo compositing. Material and realistic silhouette are the most important features."
+    },
+    {
+      "material": "foam",
+      "file": "/cups/foam.png",
+      "generatedWith": "built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: blank photographic template for dynamic cup branding. Primary request: one 12 oz blank WHITE expanded-polystyrene FOAM disposable drinking cup, open with no lid. Thick rounded rim, slightly granular foamed texture, generous upper diameter, tapered sides, thick insulating walls. Entire blank front print area unobstructed. Scene/backdrop: absolutely pure white seamless studio background and white ground, soft gray realistic contact shadow at cup base cast slightly right. Subject centered horizontally and upright, cup fills 65% of image height and about 42% width. Camera: front elevation at mid cup height with very slight downward perspective to see a modest ellipse on the top, 85mm product lens, NO tilt, perfectly symmetric central axis, low perspective distortion. Style: exceptionally photorealistic premium e-commerce product photography, crisp material details, broad softbox left, fill right, natural soft shadows. Composition: square 1024x1024 image, ONE cup only, full cup visible with generous white margin all around. Text: NONE. Constraints: NO logo, NO text, NO graphics, NO carton, NO other products, no hands, no decorations, no watermark. Cup surface must be completely blank and suitable for later separate logo compositing. Material and realistic silhouette are the most important features."
+    },
+    {
+      "material": "clear",
+      "file": "/cups/clear.png",
+      "generatedWith": "built-in image_gen",
+      "prompt": "Use case: product-mockup. Asset type: blank photographic template for dynamic cup branding. Primary request: one tall 20 oz empty crystal CLEAR PET disposable cold drink cup, open no lid no straw. Real transparent thin plastic with rolled lip, realistic faint vertical highlights, lightly ribbed lower foot. NO liquid inside, no ice. Entire blank front print area unobstructed. Background visible THROUGH the cup. Scene/backdrop: absolutely pure white seamless studio background and white ground, soft gray realistic contact shadow at cup base cast slightly right. Subject centered horizontally and upright, cup fills 65% of image height and about 42% width. Camera: front elevation at mid cup height with very slight downward perspective to see a modest ellipse on the top, 85mm product lens, NO tilt, perfectly symmetric central axis, low perspective distortion. Style: exceptionally photorealistic premium e-commerce product photography, crisp material details, broad softbox left, fill right, natural soft shadows. Composition: square 1024x1024 image, ONE cup only, full cup visible with generous white margin all around. Text: NONE. Constraints: NO logo, NO text, NO graphics, NO carton, NO other products, no hands, no decorations, no watermark. Cup surface must be completely blank and suitable for later separate logo compositing. Material and realistic silhouette are the most important features."
+    }
+  ]
+}
